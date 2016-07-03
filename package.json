@@ -6,7 +6,10 @@
     "start": "node app"
   },
   "dependencies": {
-    "restify": "4.0.3"
+    "restify": "4.0.3",
+    "nodemailer": "1.1.1",
+    "nodemailer-smtp-transport": "0.1.12",
+    "coffee-script": "latest"
   },
   "devDependencies": {
   }

@@ -1,7 +1,9 @@
+require('coffee-script').register();
+
 var restify = require('restify');
 
 // Configure globals
-// GLOBAL.appConfig = require("./config/config");
+GLOBAL.appConfig = require("./config/config");
 
 var server = restify.createServer();
 server.use(restify.bodyParser());

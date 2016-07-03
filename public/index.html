@@ -1504,7 +1504,7 @@
             
             	<div id="message"></div>
             
-                <form method="post" action="contact.php" name="contactform" id="contactform">
+                <form method="post" action="/contact" name="contactform" id="contactform">
                 
                 <div class="one_half">            
                     <input name="name" type="text" id="name" size="30"  onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }" value="Name" >
@@ -1519,6 +1519,12 @@
                 <input type="submit" class="send_message clapat-button" id="submit" value="Submit" />
     
                 </form>
+
+                <script type="text/javascript">
+                    $("#contactform").submit(function (ev) {
+                        ev.preventDefault();
+                    });
+                </script>
                 
             </div>
   			<!--/Contact Formular -->

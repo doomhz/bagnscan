@@ -1,0 +1,38 @@
+{
+  "development" : {
+    "emailer": {
+      "enabled": false,
+      "host": "http://localhost:5000",
+      "from": "Bagnscan.com <contact@bagnscan.com>",
+      "transport": {
+        "host": "email-smtp.us-east-1.amazonaws.com",
+        "port": 465,
+        "secure": true,
+        "auth": {
+          "user": "",
+          "pass": ""
+        },
+        "debug": true
+      }
+    },
+    "contact_email": ""
+  },
+  "production" : {
+    "emailer": {
+      "enabled": true,
+      "host": "http://bagnscan.com",
+      "from": "Bagnscan.com <contact@bagnscan.com>",
+      "transport": {
+        "host": "email-smtp.us-east-1.amazonaws.com",
+        "port": 465,
+        "secure": true,
+        "auth": {
+          "user": "",
+          "pass": ""
+        },
+        "debug": true
+      }
+    },
+    "contact_email": ""
+  }
+}
