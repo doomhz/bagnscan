@@ -20,7 +20,7 @@ server.get("/", restify.serveStatic({
 }));
 
 server.post("/contact", function (req, res) {
-  fs.appendFile("contact.log", req.body + "\n", function () {
+  fs.appendFile("contact.log", new Date() + ": " + req.body + "\n", function () {
     res.json({})
   })
 });
