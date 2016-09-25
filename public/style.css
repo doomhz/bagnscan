@@ -1849,7 +1849,7 @@ Primary use:	Showcase Portfolio
 	
 	.icon-square-box {
 		padding:60px 20px 20px;
-		border:#e5e5e5 1px solid;
+		/*border:#e5e5e5 1px solid;*/
 		margin-top:30px;
 		text-align:center;
 	}

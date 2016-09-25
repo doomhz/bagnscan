@@ -1,6 +1,7 @@
 require('coffee-script').register();
 
-var restify = require('restify');
+var restify = require('restify'),
+    fs = require('fs');
 
 // Configure globals
 GLOBAL.appConfig = require("./config/config");
@@ -17,6 +18,12 @@ server.get("/", restify.serveStatic({
   directory: './public',
   default: "index.html"
 }));
+
+server.post("/contact", function (req, res) {
+  fs.appendFile("contact.log", req.body + "\n", function () {
+    res.json({})
+  })
+});
 
 // require('./routes/users')(server);
 
